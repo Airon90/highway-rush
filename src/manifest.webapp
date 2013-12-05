@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "name": "Highway Rush",
+  "description": "Car racing game in 2D. Overtake the other cars as much as possible on the highway!",
+  "launch_path": "/index.html",
+  "fullscreen": "false",
+  "orientation": "portrait",
+  "icons": {
+    "30": "/gfx/icon-30.png",
+    "60": "/gfx/icon-60.png",
+    "128": "/gfx/icon-128.png"
+  },
+  "developer": {
+    "name": "István Szalontai",
+    "url": "http://istvanszalontai.atw.hu"
+  },
+  "locales": {
+    "hu": {
+      "name": "Autopályán Rohanás",
+      "description": "Felül nézetes autó versenyzős játék. Előzz meg minél több autót az autópályán!"
+    },
+		 "es": {
+      "name": "Autopista Prisa",
+      "description": "Juego de carreras de coches en 2D. Sobrepasar los otros coches lo más posible en la carretera!"
+    },
+		"fr": {
+      "name": "Autoroute Ruée",
+      "description": "Voiture jeu de course en 2D. Dépasser les autres voitures autant que possible sur l'autoroute!"
+    },
+		"de": {
+      "name": "Autobahn Rausch",
+      "description": "Autorennspiel in 2D. Übernehmen Sie die anderen Autos so viel wie möglich auf der Autobahn!"
+    }
+  },
+  "default_locale": "en"
+}

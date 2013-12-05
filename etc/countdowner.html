@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="shortcut icon" href="favicon.ico" />
+<title>Hamarosan</title>
+<style>
+body{
+	background-color:indigo;
+	/* http://www.w3schools.com/cssref/css_colornames.asp */
+	color:white;
+	font-family:Tahoma;
+	font-size:6em;
+}
+#info,#counter,#barframe,#header{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+#bar{
+	background-color:red;
+	height:20px;
+}
+#barframe{
+	width:90%;
+	border:5px solid white;
+	/* background-color:blue; */
+}
+#header{
+	width:515px;
+	height:154px;
+	background-image:url('title2.png');
+}
+</style>
+</head>
+<body>
+<div id="header"></div>
+<div id="info">
+HAMAROSAN<br>
+2013-8-9 15:40
+</div>
+<div id="counter"></div>
+<div id="barframe">
+	<div id="bar"></div>
+</div>
+<script>
+	var future=new Date(2013,11,15,23,40,0);
+	function update()
+	{
+		//var today=new Date();
+		var today=new Date(2013,11,11,8,0,0);
+		var diff=future-today;
+		var l=100-diff/402000000*100;
+		document.getElementById('counter').innerHTML=format(diff);
+		document.getElementById('bar').style.width=l+'%';
+	}
+	function format(i)
+	{		
+		if(i<0)i=0;
+		var j=''+i;
+		for(var k=1;k<=10;k++){
+			if (i<Math.pow(10,k)){j='0'+j;}
+		}
+		return j;
+	}
+	setInterval('update()',61);
+</script>
+
+</body>
+</html>
